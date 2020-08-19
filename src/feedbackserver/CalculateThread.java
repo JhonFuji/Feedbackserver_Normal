@@ -29,11 +29,11 @@ public class CalculateThread extends Thread {
             //double outputFY = 0.0;
             //double outputFZ = 0.0;
             //plot
-            /*
+            
             while (pointData.size() < ConstValue.DEGREE + 1) {                
                 pointData = InputPoints.getList();
             }
-            */
+            
             surfaceData = InputSurface.getList();
             //System.out.println(surfaceData.size());
             

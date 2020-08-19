@@ -47,7 +47,7 @@ public class CheckState {
         double pos = 1;
         
         double distanceLast = -_chunk[_chunk.length-1].distance(_onSurfacePoints[_chunk.length-1]);
-        if(_normal.dot(new Vector(_chunk[_chunk.length-1])) < 0){distanceLast = 0-distanceLast;}
+        if(_normal.dot(Vector.createSE(_onSurfacePoints[_chunk.length-1],_chunk[_chunk.length-1])) < 0){distanceLast = 0-distanceLast;}
         
         for (int i = 0; i < _chunk.length - 1; i++) {
             TruthValue tv = IncludeIn.thisFDotherFD(
